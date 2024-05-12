@@ -1,7 +1,7 @@
 # Web Automation Testing Menggunakan Cucumber dan Selenium Kelompok A8
 ## Description
 
-Praktikum dalam melakukan Web Automation Testing menggunakan Cucumber dan Selenium. Dengan fokus pada pengujian fungsionalitas web, praktikum ini dirancang dengan keterampilan praktis yang diperlukan untuk menguji aplikasi web secara otomatis. Software under test yang digunakan adalah web Swag lag (https://www.saucedemo.com/) dengan membuat script test pada fungsi login dan logout dengan menggunakan environment pengujian web otomatis yang sudah disiapkan.
+Melakukan Web Automation Testing menggunakan Cucumber dan Selenium. Dengan fokus pengujian pada fungsionalitas web, pengujian otomatis ini dirancang dengan keterampilan praktis yang diperlukan untuk menguji aplikasi web secara otomatis. Software under test yang digunakan adalah web Swag labs (https://www.saucedemo.com/). Pengujian difokuskan pada fungsi login dan logout menggunakan environment pengujian web otomatis yang sudah disiapkan sebelumnya. Kemudian, membuat script test untuk pengujian fungsionalitas secara otomatis.
 
 ## Member
 
