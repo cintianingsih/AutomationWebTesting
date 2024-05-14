@@ -9,6 +9,20 @@ Feature: Login Feature
     And I click the login button
     Then I should be redirected to the home page
     And I should see the notification "Products"
+
+   Scenario: Unsuccessful login with Username and Password unregistered in the database 
+    Given I have opened the application in the browser
+    And I have been navigated to the login page
+    When I enter username "standarduser" and password "secretsauce"
+    And I click the login button
+    Then I should see the message "Username and password do not match any user in this service!" on the login form
+
+  Scenario: Unsuccessful login with password and username is empty
+    Given I have opened the application in the browser
+    And I have been navigated to the login page
+    When I leave the username and password fields empty
+    And I click the login button
+    Then I should see the message "You need Username & Password!" on the login form
   
   Scenario: Unsuccessful login with password is registered in the database but the username is empty
     Given I have opened the application in the browser

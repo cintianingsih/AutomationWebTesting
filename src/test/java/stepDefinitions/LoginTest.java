@@ -34,6 +34,10 @@ public class LoginTest {
         driver.findElement(By.id("password")).sendKeys(password);
     }
 
+    @When("I leave the username and password fields empty")
+    public void I_leave_the_username_and_password_fields_empty() {
+    }
+
     @When("I click the login button")
     public void I_click_the_login_button() {
         driver.findElement(By.id("login-button")).click();
