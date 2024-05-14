@@ -1,6 +1,14 @@
 Feature: Login Feature
   As a user
   I want to be able to log in to the website
+
+  Scenario: Successful login with password and the username is registered in the database 
+    Given I have opened the application in the browser
+    And I have been navigated to the login page
+    When I enter username "standard_user" and password "secret_sauce"
+    And I click the login button
+    Then I should be redirected to the home page
+    And I should see the notification "Products"
   
   Scenario: Unsuccessful login with password is registered in the database but the username is empty
     Given I have opened the application in the browser

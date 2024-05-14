@@ -1,9 +1,13 @@
 package stepDefinitions;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.After;
 import io.cucumber.java.en.And;
@@ -39,6 +43,22 @@ public class LoginTest {
     public void I_should_see_the_message_on_the_login_form(String expectedResult) {
         String actualResult = driver.findElement(By.cssSelector("[data-test='error']")).getText();
         Assert.assertEquals("Epic sadface: " + expectedResult, actualResult);
+    }
+
+    @Then("I should be redirected to the home page")
+    public void I_should_be_redirected_to_the_home_page() {
+        // Wait until the URL contains "inventory.html" indicating a successful login
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.urlContains("inventory.html"));
+        // Verify that the user is redirected to the home page
+        assertTrue(driver.getCurrentUrl().contains("inventory.html"));
+    }
+
+    @And("I should see the notification {string}")
+    public void I_should_see_the_notification(String expectedNotification) {
+        // Verify the notification message is displayed
+        String notification = driver.findElement(By.className("title")).getText();
+        Assert.assertEquals(expectedNotification, notification);
     }
 
     @After
