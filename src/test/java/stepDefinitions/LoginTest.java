@@ -4,8 +4,6 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.After;
 import io.cucumber.java.en.And;
@@ -35,8 +33,6 @@ public class LoginTest {
     @When("I click the login button")
     public void I_click_the_login_button() {
         driver.findElement(By.id("login-button")).click();
-        WebDriverWait wait = new WebDriverWait(driver, 3);
-        wait.until(ExpectedConditions.urlContains("inventory.html"));
     }
 
     @Then("I should see the message {string} on the login form")

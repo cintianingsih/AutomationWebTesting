@@ -1,13 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.271 s <<< FAILURE! - in TestRunner.TestRunner
-Unsuccessful login with password is registered in the database but the username is empty(Login Feature)  Time elapsed: 9.155 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for url to contain "inventory.html". Current url: "https://www.saucedemo.com/" (tried for 3 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CINTIA', ip: '172.17.160.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_382'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.158, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3efd0d6fa353393c7ba6a83920ed42e5
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 17.344 s <<< FAILURE! - in TestRunner.TestRunner
+Unsuccessful login with password is registered in the database but the username is empty(Login Feature)  Time elapsed: 5.568 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Epic sadface: [You need Username!]> but was:<Epic sadface: [Username is required]>
+
+Unsuccessful login with username is registered in the database but the password not registered in the database(Login Feature)  Time elapsed: 3.012 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Epic sadface: [You need Password!]> but was:<Epic sadface: [Username and password do not match any user in this service]>
+
+Unsuccesfull login with username is registered in the database but the password is empty(Login Feature)  Time elapsed: 2.67 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Epic sadface: [You need Password!]> but was:<Epic sadface: [Password is required]>
+
+Unsuccesfull login with password is registered in the database but the username not registered in the database(Login Feature)  Time elapsed: 2.728 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...c sadface: Username [ and password do not match any User in  this service!]> but was:<...c sadface: Username [and password do not match any user in this service]>
+
+Unsuccesfull login with username is not registered in the database but the password is empty(Login Feature)  Time elapsed: 2.52 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Epic sadface: [You need Username & Password!]> but was:<Epic sadface: [Password is required]>
 
