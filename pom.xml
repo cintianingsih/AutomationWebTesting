@@ -61,6 +61,13 @@
             <version>5.4.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -85,7 +92,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>automation-bdd-google</projectName>
+                            <projectName>autowebtesting</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                         </configuration>

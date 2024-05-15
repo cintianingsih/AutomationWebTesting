@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import io.cucumber.java.After;
 import io.cucumber.java.en.And;
@@ -17,9 +18,10 @@ import io.cucumber.java.en.Then;
 
 public class LoginTest {
     WebDriver driver;
+
     @Given("I have opened the application in the browser")
     public void I_have_opened_the_application_in_the_browser() {
-        System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
 
@@ -32,10 +34,6 @@ public class LoginTest {
     public void I_enter_username_and_password(String username, String password) {
         driver.findElement(By.id("user-name")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
-    }
-
-    @When("I leave the username and password fields empty")
-    public void I_leave_the_username_and_password_fields_empty() {
     }
 
     @When("I click the login button")
