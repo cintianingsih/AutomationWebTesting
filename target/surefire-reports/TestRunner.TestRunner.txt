@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 43.882 s <<< FAILURE! - in TestRunner.TestRunner
+Unsuccessful login with Username and Password unregistered in the database(Login Feature)  Time elapsed: 4.716 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Username and password do not match any user in this service!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
+
+Unsuccessful login with password and username is empty(Login Feature)  Time elapsed: 4.066 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
+
+Unsuccessful login with password is registered in the database but the username is empty(Login Feature)  Time elapsed: 4.028 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[You need Username!]> but was:<[Epic sadface: Username is required]>
+
+Unsuccessful login with username is registered in the database but the password not registered in the database(Login Feature)  Time elapsed: 4.974 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[You need Password!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
+
+Unsuccesfull login with username is registered in the database but the password is empty(Login Feature)  Time elapsed: 5.293 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[You need Password!]> but was:<[Epic sadface: Password is required]>
+
+Unsuccesfull login with password is registered in the database but the username not registered in the database(Login Feature)  Time elapsed: 5.33 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Username and password do not match any User in  this service!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
+
+Unsuccesfull login with username is not registered in the database but the password is empty(Login Feature)  Time elapsed: 3.891 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Password is required]>
+
+Unsuccessful login with password not registered in the database and the username is empty(Login Feature)  Time elapsed: 4.029 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
+
