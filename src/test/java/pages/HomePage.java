@@ -3,16 +3,19 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 
 public class HomePage {
     private WebDriver driver;
 
+    @FindBy(css = "#header_container > div.header_secondary_container > span")
+    private WebElement productTextElement;
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
-    }
-
-    public String getNotificationMessage() {
-        return driver.findElement(By.cssSelector(".#header_container > div.header_secondary_container > span")).getText();
+        PageFactory.initElements(driver, this);
     }
 
      public boolean isProductTextDisplayed() {

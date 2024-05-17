@@ -31,6 +31,7 @@ public class LoginTest {
 
     @When("I enter username {string} and password {string}")
     public void enterCredentials(String username, String password) {
+        loginPage = new LoginPage(driver);
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
     }
