@@ -18,14 +18,13 @@ public class LoginTest {
     private HomePage homePage;
 
     @Given("I have opened the application in the browser")
-    public void I_have_opened_the_application_in_the_browser() {
+    public void OpenBrowser() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
 
     @And("I have been navigated to the login page")
     public void navigateToLoginPage() {
-        loginPage = new LoginPage(driver);
         driver.get("https://www.saucedemo.com/");
     }
 
@@ -58,7 +57,6 @@ public class LoginTest {
     public void verifyTextOnHomePage(String expectedText) {
         Assert.assertTrue(homePage.isProductTextDisplayed());
     }
-
 
     @After
     public void closeBrowser() {

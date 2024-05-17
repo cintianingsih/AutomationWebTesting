@@ -13,14 +13,22 @@ public class HomePage {
     @FindBy(css = "#header_container > div.header_secondary_container > span")
     private WebElement productTextElement;
 
+    @FindBy(id="inventory_container")
+    private WebElement listProduct;
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-     public boolean isProductTextDisplayed() {
+    public boolean isProductTextDisplayed() {
         WebElement productElement = driver.findElement(By.cssSelector("#header_container > div.header_secondary_container > span"));
         return productElement.getText().contains("Products");
     }
+
+    public boolean isListProductDisplayed() {
+        return listProduct.isDisplayed();
+    }
+
 }
 
