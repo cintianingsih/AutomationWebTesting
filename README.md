@@ -22,7 +22,7 @@ Melakukan Web Automation Testing menggunakan Cucumber dan Selenium. Dengan fokus
 ## Struktur File Program
 Berikut merupakan struktur file dari projek script testing yang Kami buat
 
-<img width="375" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/29efdc29-0c53-4912-aa94-f041ddd5ba55">
+<img width="375" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/7078e599-a236-492d-8632-20df9348173b">
 
 1. **main/java/**
 
@@ -82,8 +82,6 @@ Berikut merupakan struktur file dari projek script testing yang Kami buat
 
    Folder ini digunakan oleh sistem build Java untuk menyimpan file class yang dikompilasi dan artefak lain yang dihasilkan atau dibuat secara otomatis selama proses build. 
 
-   <img width="475" alt="foldersite" src="https://github.com/berlianalfd/JavaCalcApp/assets/95121218/f2d25742-3238-4505-b170-b05f47841e44">
-   
 7. **pom.xml**
 
    File ini adalah project object model (POM) untuk project Java Kami. Ini menentukan dependensi project pada library dan framework lain, serta pengaturan                      konfigurasi untuk proses build.
@@ -170,4 +168,4 @@ Berikut merupakan perintah yang dapat di gunakan untuk melakukan test program me
 
 2. Sehingga hasil dari generate report tersebut akan membuat folder site didalam folder target
 
-   <img width="275" alt="foldersite" src="https://github.com/berlianalfd/JavaCalcApp/assets/95121218/5999af32-85a7-486a-9fa9-ab2fcb9ad4c6">
+   <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/2ba8d044-b371-4c87-bae4-248967d4c528">
