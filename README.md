@@ -64,20 +64,49 @@ Berikut merupakan struktur file dari projek script testing yang Kami buat
      bahwa sistem menangani login dengan benar, baik itu login yang berhasil maupun login yang gagal dengan berbagai kombinasi nama pengguna dan kata sandi.
      Skenario pada login ini, kami membuat sebanyak 9 test case, antara lain:
        - TC0.0.1 Successful login with password and the username is registered in the database
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/4b2d04c7-d2e2-418f-8a5e-aeab8bbbf341">
+         
        - TC0.0.2 Unsuccessful login with Username and Password unregistered in the database
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/ae35d829-71a6-4f1e-a7dc-ecd66bcb54c7">
+         
        - TC0.0.3 Unsuccessful login with password and username is empty
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/48890711-e020-478a-987d-496ad31cbbcf">
+         
        - TC0.0.4 Unsuccessful login with username is registered in the database but the password not registered in the database
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/ae4cb102-9764-4ae6-900b-fb50d077e03d">
+         
        - TC0.0.5 Unsuccesfull login with username is registered in the database but the password is empty
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/45d7e29b-2ce1-4b9b-88ab-3125dd371755">
+         
        - TC0.0.6 Unsuccesfull login with password is registered in the database but the username not registered in the database
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/2a442813-20f2-4236-8c93-52c26a48bd0e">
+         
        - TC0.0.7 Unsuccessful login with password is registered in the database but the username is empty
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/647c6114-a229-45ca-8827-e4fd7477022f">
+         
        - TC0.0.8 Unsuccesfull login with username is not registered in the database but the password is empty
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/cce5727e-0012-494c-9a2d-ada72ae2dc24">
+         
        - TC0.0.9 Unsuccessful login with password not registered in the database and the username is empty
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/0fc9526d-35cb-48d2-a8d3-8960b8e9421e">
+         
      
    - **Logout.feature**
      Fitur ini mendefinisikan skenario untuk menguji proses logout pada aplikasi web. Skenario ini memastikan bahwa pengguna dapat keluar dari aplikasi dengan sukses dan 
      diarahkan kembali ke halaman login. Skenario pada login ini, kami membuat sebanyak 1 test case, yaitu:
        - TC0.1.1 Successful logout
-   
+    
+         <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/48dd3497-46bc-4f46-a149-c346d95060b2">
+         
 6. **target**
 
    Folder ini digunakan oleh sistem build Java untuk menyimpan file class yang dikompilasi dan artefak lain yang dihasilkan atau dibuat secara otomatis selama proses build. 
