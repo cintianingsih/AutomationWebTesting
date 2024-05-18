@@ -168,4 +168,4 @@ Berikut merupakan perintah yang dapat di gunakan untuk melakukan test program me
 
 2. Sehingga hasil dari generate report tersebut akan membuat folder site didalam folder target
 
-   <img width="475" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/2ba8d044-b371-4c87-bae4-248967d4c528">
+   <img width="975" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/2ba8d044-b371-4c87-bae4-248967d4c528">
