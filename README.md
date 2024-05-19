@@ -203,6 +203,17 @@ Berikut merupakan perintah yang dapat di gunakan untuk melakukan test program me
 
    <img width="950" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/2ba8d044-b371-4c87-bae4-248967d4c528">
 
+   - **Features** Kolom ini mencantumkan daftar fitur yang diuji. Dalam hal ini, kedua fitur tersebut adalah “Fitur Login” dan “Fitur Logout.
+   - **Scenarios**  Kolom ini mencantumkan jumlah skenario yang diuji untuk setiap fitur. 
+   - **Steps** Kolom ini mencantumkan jumlah steps yang diuji untuk setiap skenario. .
+   - **Passed** Kolom ini mencantumkan jumlah steps yang passed untuk setiap fitur. 
+   - **Failed** Kolom ini mencantumkan jumlah steps yang failed untuk setiap fitur. 
+   - **Skipped** Kolom ini mencantumkan jumlah steps yang dilewati untuk setiap fitur. 
+   - **Pending** Kolom ini mencantumkan jumlah steps yang tertunda untuk setiap fitur. 
+   - **Underfined** Kolom ini mencantumkan jumlah langkah yang tidak terdefinisi untuk setiap fitur. 
+   - **Duration** Kolom ini mencantumkan total durasi pengujian untuk setiap fitur. 
+   - **Status**  Kolom ini mencantumkan status pengujian untuk setiap fitur.
+
 4. Gambar di bawah ini merupakan hasil generate report untuk fitur login.
 
    <img width="950" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/97377702/b4543c69-f86f-436c-ba3c-b6e3413f11f4">
