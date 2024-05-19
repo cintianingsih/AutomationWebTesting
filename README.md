@@ -195,6 +195,27 @@ Berikut merupakan perintah yang dapat di gunakan untuk melakukan test program me
    mvn verify -DskipTests
    ```
 
-2. Sehingga hasil dari generate report tersebut akan membuat folder site didalam folder target
+2. Hasil dari generate report tersebut akan membuat folder site didalam folder target bernama cucumber-report-html
+   
+   <img width="500" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/97377702/edc42463-84af-4c6b-81ac-db738c4b6311">   
 
-   <img width="975" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/2ba8d044-b371-4c87-bae4-248967d4c528">
+3. Gambar di bawah ini merupakan hasil generate report yang berisi grafik untuk menunjukkan statistik passed dan failed untuk fitur login dan logout.
+
+   <img width="950" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/95121218/2ba8d044-b371-4c87-bae4-248967d4c528">
+
+4. Gambar di bawah ini merupakan hasil generate report untuk fitur login.
+
+   <img width="950" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/97377702/b4543c69-f86f-436c-ba3c-b6e3413f11f4">
+
+5. Gambar di bawah ini merupakan hasil generate report untuk fitur logout.
+
+   <img width="950" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/97377702/5c945fc1-9a4c-4eed-9b23-9aa9a3e2fe17">
+
+6. Gambar di bawah ini merupakan hasil generate report yang berisi grafik untuk menunjukkan statistik passed dan failed untuk tag, tag tersebut mewakili sebuah test case.
+
+   <img width="950" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/97377702/7629d6ee-8193-4220-8eba-b1628a0acbfe">
+
+7. Pada generate report terdapat pula Failures Overview yang berisi ringkasan skenario-skenario yang gagal. Berikut adalah dsalah satu contoh dari ringkasan skenario yang gagal, yaitu TC 0.0.2
+
+   <img width="950" alt="foldersite" src="https://github.com/cintianingsih/AutomationWebTesting/assets/97377702/58c930fb-1210-4538-b587-0eba10845235">
+
